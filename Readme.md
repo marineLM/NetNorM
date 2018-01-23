@@ -63,7 +63,7 @@ NetNorM was tested on exome somatic mutation datasets from 8 cancer types, downl
 ### Gene network
 Pathway Commons (version 6) was used as gene network and downloaded in SIF format (Pathway Commons.6.All.EXTENDED_BINARY_SIF.tsv) from http://www.pathwaycommons.org/archives/PC2/v6/.
 
-The preprocessed *raw binary mutation matrices* as well as the adjacency matrix corresponding Pathway Commons are available in csv format at http://cbio.mines-paristech.fr/~mlemorvan/data_NetNorM.zip.
+The preprocessed *raw binary mutation matrices* as well as the adjacency matrix corresponding Pathway Commons are available in csv format at http://cbio.mines-paristech.fr/~mlemorvan/data_NetNorM.zip. Note that the last two columns of the mutation matrices correspond to survival information (Days_survival and Vital_Status).
 
 
 ```python
