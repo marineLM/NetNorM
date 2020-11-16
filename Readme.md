@@ -63,20 +63,13 @@ NetNorM was tested on exome somatic mutation datasets from 8 cancer types, downl
 ### Gene network
 Pathway Commons (version 6) was used as gene network and downloaded in SIF format (Pathway Commons.6.All.EXTENDED_BINARY_SIF.tsv) from http://www.pathwaycommons.org/archives/PC2/v6/.
 
-The preprocessed *raw binary mutation matrices* as well as the adjacency matrix corresponding Pathway Commons are available in csv format at http://cbio.mines-paristech.fr/~mlemorvan/data_NetNorM.zip. Note that the last two columns of the mutation matrices correspond to survival information (Days_survival and Vital_Status).
+The preprocessed *raw binary mutation matrices* as well as the adjacency matrix corresponding Pathway Commons are available in csv format in *data_NetNorM.zip*. Note that the last two columns of the mutation matrices correspond to survival information (Days_survival and Vital_Status).
 
 
 ```python
 # This script loads the LUAD mutation dataset as well as the Pathway Commons adjacency matrix.
-import urllib
 import zipfile
 
-# Download the zip file which contains the data. The zip file will appear in your current
-# folder under the name data_NetNorM.zip
-data = urllib.URLopener()
-data.retrieve('http://cbio.mines-paristech.fr/~mlemorvan/data_NetNorM.zip', 'data_NetNorM.zip')
-
-# Unzip it
 zip = zipfile.ZipFile('data_NetNorM.zip')
 zip.extractall()
 ```
